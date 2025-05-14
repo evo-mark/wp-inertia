@@ -1,0 +1,64 @@
+{
+    "name": "@evo-mark/inertia-wordpress",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "exports": {
+        ".": {
+            "import": "./vue/index.js",
+            "require": "./vue/index.js"
+        },
+        "./vue": {
+            "import": "./vue/index.js",
+            "require": "./vue/index.js"
+        },
+        "./react": {
+            "import": "./react/index.jsx",
+            "require": "./react/index.jsx"
+        },
+        "./svelte": {
+            "import": "./svelte/index.js",
+            "require": "./svelte/index.js"
+        }
+    },
+    "scripts": {
+        "build": "vite build",
+        "clean": "rm -rf dist"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "peerDependencies": {
+        "@inertiajs/vue3": "^2.0.0",
+        "@inertiajs/react": "^2.0.0",
+        "@inertiajs/svelte": "^2.0.0",
+        "@vueuse/core": "^12.0.0",
+        "vue": "^3.5.0",
+        "react": "^19.0.0",
+        "svelte": "^5.0.0"
+    },
+    "peerDependenciesMeta": {
+        "@inertiajs/vue3": {
+            "optional": true
+        },
+        "@inertiajs/react": {
+            "optional": true
+        },
+        "@inertiajs/svelte": {
+            "optional": true
+        },
+        "@vueuse/core": {
+            "optional": true
+        },
+        "vue": {
+            "optional": true
+        },
+        "react": {
+            "optional": true
+        },
+        "svelte": {
+            "optional": true
+        }
+    }
+}
