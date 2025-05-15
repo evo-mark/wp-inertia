@@ -1,0 +1,18 @@
+{
+  "images/ninja-forms-red.png": {
+    "file": "assets/ninja-forms-red-43pGWHC2.png",
+    "src": "images/ninja-forms-red.png"
+  },
+  "js/main.js": {
+    "file": "assets/main-BB-abBPb.js",
+    "name": "main",
+    "src": "js/main.js",
+    "isEntry": true,
+    "css": [
+      "assets/main-DLr-eDqe.css"
+    ],
+    "assets": [
+      "assets/ninja-forms-red-43pGWHC2.png"
+    ]
+  }
+}
