@@ -1,0 +1,44 @@
+{
+	"name": "@evo-mark/inertia-wordpress",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"admin": "pnpm --stream --if-present -r --filter './development/admin' dev",
+		"admin:build": "pnpm --stream --if-present -r --filter './development/admin' build",
+		"docs:dev": "vitepress dev docs --host",
+		"docs:build": "vitepress build docs",
+		"docs:preview": "vitepress preview docs",
+		"prepare": "husky"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.11.0",
+	"devDependencies": {
+		"@eslint/js": "^9.26.0",
+		"eslint": "^9.26.0",
+		"eslint-config-prettier": "^10.1.5",
+		"globals": "^16.1.0",
+		"husky": "^9.1.7",
+		"lint-staged": "^16.0.0",
+		"postcss": "^8.5.3",
+		"postcss-nested": "^7.0.2",
+		"prettier": "^3.5.3",
+		"vite": "^6.3.5",
+		"vitepress": "^1.6.3"
+	},
+	"dependencies": {
+		"@mdi/js": "^7.4.47"
+	},
+	"pnpm": {
+		"overrides": {
+			"axios": ">=1.9.0",
+			"@babel/runtime": ">=7.26.10"
+		},
+		"onlyBuiltDependencies": [
+			"esbuild"
+		]
+	}
+}
